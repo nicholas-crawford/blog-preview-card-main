@@ -1,0 +1,148 @@
+:root {
+    /* Colours */
+
+    /* Yellow colours */
+    --yellow-regular: hsl(47, 88%, 63%);
+
+    /* Grey colours */
+    --grey-950: hsl(0, 0%, 7%);
+    --grey-500: hsl(0, 0%, 42%);
+
+    /* White colours */
+    --white-regular: hsl(0 0% 100%);
+
+
+    /* Spacing */
+    --spacing-1600: 128px;
+    --spacing-600: 48px;
+    --spacing-500: 40px;
+    --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-80: 6px;
+    --spacing-0: 0;
+
+    /*font-sizes*/
+    --font-size-40: 2.5rem; /* 40px */
+    --font-size-36: 2.25rem; /* 36px */
+    --font-size-28: 1.75rem; /* 28px */
+    --font-size-20: 1.25rem; /* 20px */
+    --font-size-16: 1rem; /* 16px */
+    --font-size-14: 0.875rem; /* 14px */
+}
+
+html {
+    background-color: var(--yellow-regular);
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    display: grid;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 384px;
+    border: black 1px solid;
+    border-radius: var(--spacing-80);
+    margin: auto;
+    background-color: var(--white-regular);
+    box-shadow: 8px 8px 0 0 var(--grey-950);
+
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: var(--spacing-300);
+}
+
+.card__mainImage {
+    margin: var(--spacing-300) var(--spacing-300) var(--spacing-0) var(--spacing-300);
+}
+
+.card__tag {
+    margin-bottom: var(--spacing-150);
+    font-size: calc(var(--font-size-14) + 1vmin);
+    font-weight: bold;
+}
+
+.card__tag > span {
+    background-color: var(--yellow-regular);
+    padding: 4px 12px;
+}
+
+.card__date {
+    margin-bottom: var(--spacing-150);
+    font-size: calc(var(--font-size-14) + 1vmin);
+}
+
+.card__heading {
+    margin-bottom: var(--spacing-150);
+}
+
+.card__description {
+    margin-bottom: var(--spacing-300);
+    font-size: calc(var(--font-size-16) + 1vmin);
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+}
+
+.card__authorImage {
+    margin-right: var(--spacing-150);
+}
+
+.card__authorText {
+    font-size: calc(var(--font-size-14) + 1vmin);
+    font-weight: bold;
+}
+
+/* CSS Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: var(--spacing-0);
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
