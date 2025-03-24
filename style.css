@@ -71,7 +71,7 @@ html, body {
 
 .card__tag {
     margin-bottom: var(--spacing-150);
-    font-size: calc(var(--font-size-14) + 1vmin);
+    font-size: var(--font-size-14);
     font-weight: bold;
 }
 
@@ -82,7 +82,7 @@ html, body {
 
 .card__date {
     margin-bottom: var(--spacing-150);
-    font-size: calc(var(--font-size-14) + 1vmin);
+    font-size: var(--font-size-14);
 }
 
 .card__heading {
@@ -91,7 +91,7 @@ html, body {
 
 .card__description {
     margin-bottom: var(--spacing-300);
-    font-size: calc(var(--font-size-16) + 1vmin);
+    font-size: var(--font-size-16);
 }
 
 .card__author {
@@ -104,7 +104,7 @@ html, body {
 }
 
 .card__authorText {
-    font-size: calc(var(--font-size-14) + 1vmin);
+    font-size: var(--font-size-14);
     font-weight: bold;
 }
 
