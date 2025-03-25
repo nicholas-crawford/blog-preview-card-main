@@ -24,9 +24,9 @@
     --spacing-0: 0;
 
     /*font-sizes*/
-    --font-size-24: 1.5rem; /* 24px */
-    --font-size-16: 1rem; /* 16px */
-    --font-size-14: 0.875rem; /* 14px */
+    --font-size-24: clamp(1.25rem, 1.163rem + 0.435vw, 1.5rem); /* 24px */
+    --font-size-16: clamp(0.875rem, 0.832rem + 0.217vw, 1rem); /* 16px */
+    --font-size-14: clamp(0.75rem, 0.707rem + 0.217vw, 0.875rem); /* 14px */
 }
 
 html {
